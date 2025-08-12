@@ -1,4 +1,4 @@
-# 1mentor-ruby
+# one-mentor-ruby
 
 A GraphQL client for 1Mentor in ruby.
 
@@ -7,7 +7,7 @@ A GraphQL client for 1Mentor in ruby.
 Add to your `Gemfile`:
 
 ```ruby
-gem '1mentor-ruby'
+gem 'one-mentor-ruby'
 ```
 
 Then `bundle install`.
