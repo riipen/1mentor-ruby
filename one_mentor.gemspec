@@ -3,7 +3,7 @@
 require_relative 'lib/one_mentor/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'one-mentor-ruby'
+  spec.name = '1mentor-ruby'
   spec.version = OneMentor::VERSION
   spec.authors = ['Jordan Ell']
   spec.email = ['jordan.ell@riipen.com']
