@@ -12,6 +12,7 @@ module OneMentor
               message
               careerObjectives {
                 occupation
+                gaps
               }
             }
           }
