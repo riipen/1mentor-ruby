@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require_relative 'lib/one_mentor/version'
+require_relative 'lib/one-mentor-ruby/version'
 
 Gem::Specification.new do |spec|
-  spec.name = '1mentor-ruby'
+  spec.name = 'one-mentor-ruby'
   spec.version = OneMentor::VERSION
   spec.authors = ['Jordan Ell']
   spec.email = ['jordan.ell@riipen.com']
 
   spec.summary = 'An API client for 1Mentor in ruby.'
   spec.description = 'Access the 1Mentor REST API.'
-  spec.homepage = 'https://github.com/riipen/1mentor-ruby'
+  spec.homepage = 'https://github.com/riipen/one-mentor-ruby'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 2.6'
 

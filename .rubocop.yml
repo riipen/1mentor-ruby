@@ -18,15 +18,23 @@ Metrics/MethodLength:
   Enabled: true
   Max: 100
 
+Naming/FileName:
+  Enabled: true
+  Exclude:
+    - lib/one-mentor-ruby.rb
+
 RSpec/ExampleLength:
   Enabled: false
   Exclude:
-    - lib/one_mentor/actions/**/*
+    - lib/one-mentor-ruby/actions/**/*
 
 RSpec/InstanceVariable:
   Enabled: false
 
 RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+RSpec/SpecFilePathFormat:
   Enabled: false
 
 RSpec/SubjectStub:

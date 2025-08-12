@@ -3,7 +3,7 @@
 require 'rspec'
 require 'webmock/rspec'
 
-require 'one_mentor'
+require 'one-mentor-ruby'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
