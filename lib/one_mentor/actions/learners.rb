@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module OneMentor
   module Actions
     module Learners
@@ -16,12 +18,12 @@ module OneMentor
         GRAPHQL
 
         response = connection.post('graphql', {
-          operationName: 'GetLearnerCareerObjectivesAndSkillGaps',
-          query:,
-          variables: {
-            studentEmail: email
-          },
-        })
+                                     operationName: 'GetLearnerCareerObjectivesAndSkillGaps',
+                                     query: query,
+                                     variables: {
+                                       studentEmail: email
+                                     }
+                                   })
 
         if response.dig('data', 'getLearnerCareerObjectivesAndSkillGaps', 'status')
           response.dig('data', 'getLearnerCareerObjectivesAndSkillGaps', 'careerObjectives')
@@ -42,12 +44,12 @@ module OneMentor
         GRAPHQL
 
         response = connection.post('graphql', {
-          operationName: 'GetLearnerCareerObjectivesAndSkillGaps',
-          query:,
-          variables: {
-            studentEmail: email
-          },
-        })
+                                     operationName: 'GetLearnerCareerObjectivesAndSkillGaps',
+                                     query: query,
+                                     variables: {
+                                       studentEmail: email
+                                     }
+                                   })
 
         response.dig('data', 'getLearnerCareerObjectivesAndSkillGaps', 'status')
       end

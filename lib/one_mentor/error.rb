@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 module OneMentor
   class Error < StandardError
     attr_reader :response
 
-    def self.from_response(response) # rubocop:disable Metrics/CyclomaticComplexity, Metrics/MethodLength:
+    def self.from_response(response) # rubocop:disable Metrics/CyclomaticComplexity
       klass =
         case response.status
         when 400 then BadRequest

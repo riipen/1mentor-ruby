@@ -1,17 +1,28 @@
 # frozen_string_literal: true
 
-require "spec_helper"
+require 'spec_helper'
 
 RSpec.describe OneMentor::Actions::Learners do
   subject { @client }
 
   before do
-    @client = OneMentor::Client.new(subdomain: 'subdomain', api_key: "key")
+    @client = OneMentor::Client.new(subdomain: 'subdomain', api_key: 'key')
   end
 
-  describe "#learner_career_objectives" do
-    it "issues the correct POST request to get a list of learner career objectives" do
+  describe '#learner_career_objectives' do
+    it 'issues the correct POST request to get a list of learner career objectives' do
       stub = stub_request(:post, "#{@client.base_url}/graphql")
+             .to_return(
+               body: {
+                 data: {
+                   getLearnerCareerObjectivesAndSkillGaps: {
+                     status: true,
+                     careerObjectives: [{ foo: 'bar' }]
+                   }
+                 }
+               }.to_json,
+               headers: { 'Content-Type' => 'application/json' }
+             )
 
       @client.learner_career_objectives('test@email.com')
 
@@ -19,9 +30,19 @@ RSpec.describe OneMentor::Actions::Learners do
     end
   end
 
-  describe "#learner_exists" do
-    it "issues the correct POST request to get if a specific learner exists" do
+  describe '#learner_exists' do
+    it 'issues the correct POST request to get if a specific learner exists' do
       stub = stub_request(:post, "#{@client.base_url}/graphql")
+             .to_return(
+               body: {
+                 data: {
+                   getLearnerCareerObjectivesAndSkillGaps: {
+                     status: true
+                   }
+                 }
+               }.to_json,
+               headers: { 'Content-Type' => 'application/json' }
+             )
 
       @client.learner_exists('test@email.com')
 

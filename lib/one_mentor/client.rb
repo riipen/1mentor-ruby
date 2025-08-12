@@ -5,6 +5,8 @@ module OneMentor
     include OneMentor::Actions::Base
     include OneMentor::Actions::Learners
 
+    attr_reader :subdomain, :api_key, :base_url
+
     def initialize(subdomain:, api_key:)
       @subdomain  = subdomain
       @api_key    = api_key

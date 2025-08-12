@@ -16,7 +16,7 @@ RSpec.describe OneMentor::Actions::Base do
       }
 
       stub = stub_request(:post, "#{@client.base_url}/graphql")
-             .with(**body)
+             .with(body: { **body })
 
       @client.request(**body)
 

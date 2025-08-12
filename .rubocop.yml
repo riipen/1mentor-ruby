@@ -1,4 +1,4 @@
-require:
+plugins:
   - rubocop-rspec
 
 AllCops:
@@ -6,21 +6,22 @@ AllCops:
   SuggestExtensions: false
   TargetRubyVersion: 2.6
 
+Layout/LineLength:
+  Max: 150
+  
 Metrics/BlockLength:
   Enabled: true
   Exclude:
     - spec/**/*
 
-Naming/FileName:
+Metrics/MethodLength:
   Enabled: true
-  Exclude:
-    - lib/lightcast-ruby.rb
+  Max: 100
 
 RSpec/ExampleLength:
   Enabled: false
-
-RSpec/FilePath:
-  Enabled: false
+  Exclude:
+    - lib/one_mentor/actions/**/*
 
 RSpec/InstanceVariable:
   Enabled: false
@@ -45,5 +46,3 @@ Style/StringLiteralsInInterpolation:
   Enabled: true
   EnforcedStyle: double_quotes
 
-Layout/LineLength:
-  Max: 150
