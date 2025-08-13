@@ -42,9 +42,10 @@ Returns the following array
 
 ```json
 [
-  {},
-  {},
-  {},
+  {
+    "occupation": "Occupation A",
+    "gaps": ["Skill A", "Skill B", "Skill C"]
+  },
 ]
 ```
 
@@ -53,6 +54,21 @@ Returns the following array
 Example: `client.learner_exists(email@learner.com)`
 
 Returns `true` if the email address is tied to a learner account, `false` otherwise.
+
+### Relalted occupations
+
+Example: `client.occupations_related('Neurosurgery')`
+
+Returns the following array
+
+```json
+[
+  {
+    "occupation": "Occupation A",
+    "skillSet": ["Skill A", "Skill B", "Skill C"]
+  },
+]
+```
 
 ### Custom requests
 

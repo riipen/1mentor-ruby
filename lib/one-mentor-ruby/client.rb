@@ -4,6 +4,7 @@ module OneMentor
   class Client
     include OneMentor::Actions::Base
     include OneMentor::Actions::Learners
+    include OneMentor::Actions::Occupations
 
     attr_reader :subdomain, :api_key, :base_url
 

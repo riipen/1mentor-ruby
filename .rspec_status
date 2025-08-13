@@ -1,0 +1,21 @@
+example_id                                                | status | run_time        |
+--------------------------------------------------------- | ------ | --------------- |
+./spec/one-mentor-ruby/actions/base_spec.rb[1:1:1]        | passed | 0.01089 seconds |
+./spec/one-mentor-ruby/actions/learners_spec.rb[1:1:1]    | passed | 0.00371 seconds |
+./spec/one-mentor-ruby/actions/learners_spec.rb[1:2:1]    | passed | 0.00404 seconds |
+./spec/one-mentor-ruby/actions/occupations_spec.rb[1:1:1] | passed | 0.00354 seconds |
+./spec/one-mentor-ruby/client_spec.rb[1:1:1]              | passed | 0.00029 seconds |
+./spec/one-mentor-ruby/client_spec.rb[1:2:1]              | passed | 0.0001 seconds  |
+./spec/one-mentor-ruby/connection_spec.rb[1:1:1]          | passed | 0.00008 seconds |
+./spec/one-mentor-ruby/connection_spec.rb[1:2:1]          | passed | 0.00644 seconds |
+./spec/one-mentor-ruby/error_spec.rb[1:1:1]               | passed | 0.00391 seconds |
+./spec/one-mentor-ruby/error_spec.rb[1:1:2]               | passed | 0.00032 seconds |
+./spec/one-mentor-ruby/error_spec.rb[1:1:3]               | passed | 0.00023 seconds |
+./spec/one-mentor-ruby/error_spec.rb[1:1:4]               | passed | 0.00032 seconds |
+./spec/one-mentor-ruby/error_spec.rb[1:1:5]               | passed | 0.00021 seconds |
+./spec/one-mentor-ruby/error_spec.rb[1:1:6]               | passed | 0.00017 seconds |
+./spec/one-mentor-ruby/error_spec.rb[1:1:7]               | passed | 0.00016 seconds |
+./spec/one-mentor-ruby/error_spec.rb[1:1:8]               | passed | 0.00018 seconds |
+./spec/one-mentor-ruby/error_spec.rb[1:1:9]               | passed | 0.0007 seconds  |
+./spec/one-mentor-ruby/error_spec.rb[1:1:10]              | passed | 0.0002 seconds  |
+./spec/one-mentor-ruby/error_spec.rb[1:2:1]               | passed | 0.00005 seconds |
